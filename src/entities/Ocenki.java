@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package entities;
 
 import java.sql.Date;
@@ -13,8 +9,6 @@ public class Ocenki implements IEntity{
     public long getId() {
         return id;
     }
-
-    
 
     public String getOcenki() {
         return ocenki;
@@ -27,7 +21,6 @@ public class Ocenki implements IEntity{
     public Long getId_zachetki() {
         return id_zachetki;
     }
-
 
     public void setId(long id) {
         this.id = id;

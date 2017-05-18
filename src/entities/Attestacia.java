@@ -1,20 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package entities;
 
 
 public class Attestacia implements IEntity{
     private long id;
-      private int semestr;
+    private int semestr;
     private int napravlenie;
     private String predmet;
     private int id_vida_otch;
-private int id_prepodavatel;
-private String vida_otch;
-private String prepodavatel;
+    private int id_prepodavatel;
+    private String vida_otch;
+    private String prepodavatel;
 
     public String getVida_otch() {
         return vida_otch;
@@ -47,12 +43,6 @@ public Attestacia(){}
         this.prepodavatel = prepodavatel;
         
     }
-    
-    
-    
-
-    
-
     public long getId() {
         return id;
     }
@@ -105,7 +95,6 @@ public Attestacia(){}
     public String toString(){
         return semestr+" "+napravlenie+" "+predmet+" "+vida_otch+" "+prepodavatel;
     }
-//////////////////////////
     @Override
     public String[] getHeader(){
         return new String[] {"id","semestr","napravlenie","predmet","vid_otch","prepodovatel"};

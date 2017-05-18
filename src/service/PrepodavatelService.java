@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package service;
 
 
@@ -51,9 +47,7 @@ public class PrepodavatelService extends AbstractService<Prepodavatel>{
                 entity.setImia(rs.getString("imia"));
                 entity.setOtchestvo(rs.getString("otchectvo"));
                 entity.setDolgnost(rs.getString("dolgnost"));
-
                 entities.add(entity);
-                
             }
         } catch (SQLException ex) {
             throw ex;

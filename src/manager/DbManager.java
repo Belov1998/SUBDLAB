@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package manager;
 
 import containers.ConnectionContainer;
@@ -40,7 +36,7 @@ public class DbManager {
     public boolean closeConnection(){
         if (connection != null) {
                 try {
-                    connection.close(); // Каскадное закрытие statement, resultSet
+                    connection.close(); 
                     
                 } catch (SQLException ex) {
                     Logger.getLogger(DbManager.class.getName()).log(

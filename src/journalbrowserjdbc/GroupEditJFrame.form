@@ -211,9 +211,6 @@
     <Component class="javax.swing.JTextField" name="tfPotok">
     </Component>
     <Component class="javax.swing.JTextField" name="tfNapravlenie">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfNapravlenieActionPerformed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>

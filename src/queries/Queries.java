@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package queries;
 
 import containers.FirstQueryContainer;
@@ -35,9 +31,9 @@ public class Queries {
         try {
             fqContainers = new ArrayList<>();
             String query = "select familia,imia,otchectvo,id_zachetki " +
-"from student " +
-"where id_group=10 " +
-"order by familia asc;";
+                    "from student " +
+                    "where id_group=10 " +
+                    "order by familia asc;";
             ResultSet rs = dbManager.executeQuery(query);
             while(rs.next()){
                 FirstQueryContainer container = new FirstQueryContainer();

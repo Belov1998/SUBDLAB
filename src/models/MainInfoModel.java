@@ -1,9 +1,4 @@
-/*
 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package models;
 
 import service.OcenkiService;
@@ -14,13 +9,11 @@ import service.Vid_OtchetnostiService;
 import entities.Ocenki;
 import entities.Student;
 import entities.Attestacia;
-import entities.Kafedra;
 import entities.Prepodavatel;
 import entities.Vid_Otchetnosti;
 import java.sql.SQLException;
 import java.util.List;
 import manager.DbManager;
-import service.KafedraService;
 
 
 public class MainInfoModel {
@@ -29,7 +22,6 @@ public class MainInfoModel {
     private PrepodavatelService teacherS = new PrepodavatelService();
     private Vid_OtchetnostiService testTypeS = new Vid_OtchetnostiService();
     private AttestaciaService subjectS = new AttestaciaService();
-    private KafedraService kaferaS=new KafedraService();
     private DbManager dbManager = null;
 
     public MainInfoModel() {
@@ -81,8 +73,6 @@ public class MainInfoModel {
         return assessmentS.all();
     }
     
-    public List<Kafedra> getKafedraS() throws SQLException {
-        return kaferaS.all();
-    }
+   
 
 }
